@@ -7,6 +7,7 @@ import img3 from '../src/assets/images/Doctors-amico.png'
 import img4 from '../src/assets/images/services.png'
 import About from '../components/about/About';
 import DoctorList from '../components/doctors/DoctorList';
+import Doctors from './Doctors/Doctors';
 
 const Home = () => {
   return (
@@ -111,28 +112,28 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 pb-20 lg:mt-10">
-            <div className="flex p-4 flex-col items-center hover:cursor-pointer hover:bg-green-500 rounded-xl">
+            <div className="flex p-4 flex-col items-center hover:cursor-pointer hover:border-2 hover:border-cyan-400 rounded-xl shadow-lg">
               <img src={img1} className="h-60 w-60" alt="" />
               <h1 className="text-2xl font-semibold text-center mt-4">Find a Doctor</h1>
               <p className="text-center">Discover expert healthcare professionals to meet your medical needs.</p>
               <FaRegArrowAltCircleRight className="m-5 h-6 w-6"/>
             </div>
 
-            <div className="flex p-4 flex-col items-center hover:cursor-pointer hover:bg-green-500 rounded-xl">
+            <div className="flex p-4 flex-col items-center hover:cursor-pointer hover:border-2 hover:border-cyan-400 rounded-xl shadow-lg">
               <img src={img4} className="h-60 w-60" alt="" />
               <h1 className="text-2xl font-semibold text-center mt-4">24hr Service</h1>
               <p className="text-center">Access around-the-clock assistance for immediate healthcare support and emergencies.</p>
               <FaRegArrowAltCircleRight className="m-5 h-6 w-6"/>
             </div>
 
-            <div className="flex p-4 flex-col items-center hover:cursor-pointer hover:bg-green-500 rounded-xl">
+            <div className="flex p-4 flex-col items-center hover:cursor-pointer hover:border-2 hover:border-cyan-400 rounded-xl shadow-lg">
               <img src={img3} className="h-60 w-60" alt="" />
               <h1 className="text-2xl font-semibold text-center mt-4">All under one roof</h1>
               <p className="text-center">Experience comprehensive care with a wide range of medical services conveniently available in one location.</p>
               <FaRegArrowAltCircleRight className="m-5 h-6 w-6"/>
             </div>
 
-            <div className="flex p-4 flex-col items-center hover:cursor-pointer hover:bg-green-500 rounded-xl">
+            <div className="flex p-4 flex-col items-center hover:cursor-pointer hover:border-2 hover:border-cyan-400 rounded-xl shadow-lg">
               <img src={img2} className="h-60 w-60" alt="" />
               <h1 className="text-2xl font-semibold text-center mt-4">High quality service</h1>
               <p className="text-center">Receive top-notch medical care with a commitment to excellence, ensuring your well-being and satisfaction.</p>
@@ -155,7 +156,7 @@ const Home = () => {
                  <p className="pt-6 heading text-center font-medium text-gray-500 text-[20px]">Providing world class care for all......</p>  
             </div>
 
-            <DoctorList/>
+            <Doctors/>
       </section>
 
       
