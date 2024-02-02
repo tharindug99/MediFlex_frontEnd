@@ -35,7 +35,7 @@ const DoctorDetails = ({id}) => {
               </p>
               </div>
 
-              
+              {/* hiii */}
 
 
             </div>
