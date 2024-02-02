@@ -3,7 +3,7 @@ import React from "react";
 // import aboutCardImage from '../../src/assets/avatar.png';
 const About = () => {
   return (
-    <section>
+    <section >
       <h1 className="text-center mb-40 sm:mb-20 text-[36px] leading-[46px] font-[700] md:text-[60px] md:leading-[70px]">
         About Us
       </h1>

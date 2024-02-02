@@ -8,26 +8,26 @@ const Doctors = () => {
 
   // Your list of doctors with their professions (added more sample data)
   const doctorsList = [
-    { name: 'Dr. Smith', profession: 'Neuro-surgeon', photo: img1 },
-    { name: 'Dr. Johnson', profession: 'Dermatologist', photo: img1 },
-    { name: 'Dr. Davis', profession: 'Paediatrician', photo: img1 },
-    { name: 'Dr. Brown', profession: 'Cardiologist', photo: img1 },
-    { name: 'Dr. Wilson', profession: 'Orthopedic Surgeon', photo: img1 },
-    { name: 'Dr. Lee', profession: 'Gastroenterologist', photo: img1 },
-    { name: 'Dr. Turner', profession: 'Ophthalmologist', photo: img1 },
-    { name: 'Dr. Mitchell', profession: 'Psychiatrist', photo: img1 },
-    { name: 'Dr. Parker', profession: 'Endocrinologist', photo: img1 },
-    { name: 'Dr. Adams', profession: 'Rheumatologist', photo: img1 },
-    { name: 'Dr. White', profession: 'Urologist', photo: img1 },
-    { name: 'Dr. Anderson', profession: 'Otolaryngologist', photo: img1 },
-    { name: 'Dr. Hayes', profession: 'Nephrologist', photo: img1 },
-    { name: 'Dr. Clark', profession: 'Pulmonologist', photo: img1 },
-    { name: 'Dr. Turner', profession: 'Hematologist', photo: img1 },
-    { name: 'Dr. Taylor', profession: 'Dentist', photo: img1 },
-    { name: 'Dr. Hughes', profession: 'Allergist', photo: img1 },
-    { name: 'Dr. Robinson', profession: 'Plastic Surgeon', photo: img1 },
-    { name: 'Dr. Stewart', profession: 'Gynecologist', photo: img1 },
-    { name: 'Dr. Martin', profession: 'Neurologist', photo: img1 },
+    { id:1, name: 'Dr. Smith', profession: 'Neuro-surgeon', photo: img1 },
+    { id:2,name: 'Dr. Johnson', profession: 'Dermatologist', photo: img1 },
+    { id:3,name: 'Dr. Davis', profession: 'Paediatrician', photo: img1 },
+    { id:4,name: 'Dr. Brown', profession: 'Cardiologist', photo: img1 },
+    { id:5,name: 'Dr. Wilson', profession: 'Orthopedic Surgeon', photo: img1 },
+    { id:6,name: 'Dr. Lee', profession: 'Gastroenterologist', photo: img1 },
+    { id:7,name: 'Dr. Turner', profession: 'Ophthalmologist', photo: img1 },
+    { id:8,name: 'Dr. Mitchell', profession: 'Psychiatrist', photo: img1 },
+    { id:9,name: 'Dr. Parker', profession: 'Endocrinologist', photo: img1 },
+    { id:10,name: 'Dr. Adams', profession: 'Rheumatologist', photo: img1 },
+    { id:11,name: 'Dr. White', profession: 'Urologist', photo: img1 },
+    { id:12,name: 'Dr. Anderson', profession: 'Otolaryngologist', photo: img1 },
+    { id:13,name: 'Dr. Hayes', profession: 'Nephrologist', photo: img1 },
+    { id:14,name: 'Dr. Clark', profession: 'Pulmonologist', photo: img1 },
+    { id:15,name: 'Dr. Turner', profession: 'Hematologist', photo: img1 },
+    { id:16,name: 'Dr. Taylor', profession: 'Dentist', photo: img1 },
+    { id:17,name: 'Dr. Hughes', profession: 'Allergist', photo: img1 },
+    { id:18,name: 'Dr. Robinson', profession: 'Plastic Surgeon', photo: img1 },
+    { id:19,name: 'Dr. Stewart', profession: 'Gynecologist', photo: img1 },
+    { id:20,name: 'Dr. Martin', profession: 'Neurologist', photo: img1 },
   ];
 
   // Filter doctors based on the selected profession
@@ -70,8 +70,8 @@ const Doctors = () => {
 
         {/* Display Doctor Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {searchedDoctors.map((doctor, index) => (
-            <DoctorCard key={index} doctor={doctor} />
+          {searchedDoctors.map((doctor) => (
+            <DoctorCard key={doctor.id} doctor={doctor} />
           ))}
         </div>
       </div>

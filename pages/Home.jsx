@@ -19,7 +19,8 @@ const Home = () => {
             {/* hero content */}
             <div className="flex flex-col lg:flex-row gap-5 items-center">
               {/* Left Section */}
-              <div className="lg:w-[570px] space-y-10">
+              <div data-aos="fade-up"
+                   data-aos-offset="200"className="lg:w-[570px] space-y-10">
                 <h1 className="text-[36px] leading-[46px] font-[700] md:text-[60px] md:leading-[70px]">
                   We help patients live a longer, healthier life
                 </h1>
@@ -36,7 +37,8 @@ const Home = () => {
               </div>
 
               {/* Right Section - Image */}
-              <div className="mt-8 lg:mt-0">
+              <div data-aos="fade-left"
+            data-aos-offset="200"className="mt-8 lg:mt-0">
                 <img
                   src={heroImage}
                   alt="Hero Image"
@@ -61,7 +63,8 @@ const Home = () => {
 
 
           {/* hero counter */}
-          <div className="text-start mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-[50px]">
+          <div data-aos="fade-up"
+            data-aos-offset="200" className="text-start mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-[50px]">
                   <div className="lg:w-1/3 md:w-full text-center">
                     <h2 className="text-start text-[36px] py-5 leading-[56px] lg:text-[44px] lg-leading-[54px] font-[700]">
                       30+
@@ -103,7 +106,8 @@ const Home = () => {
 
           {/* hero__section end       */}
           
-          <div className="container lg:py-40 sm:py-10">
+          <div data-aos="fade-up"
+            data-aos-offset="200" className="container lg:py-40 sm:py-10">
             <div className="lg:w-[740px] mx-auto ">
                  <h2 className=" heading text-center font-medium text-[50px]">Providing the best medical services in the country</h2> 
                  <p className="pt-6 heading text-center font-medium text-gray-500 text-[20px]">World Class healthcare for all. Our healthcare system offers unmatched health care for everyone...</p>  
@@ -111,7 +115,7 @@ const Home = () => {
 
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 pb-20 lg:mt-10">
+          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 pb-20 lg:mt-10">
             <div className="flex p-4 flex-col items-center hover:cursor-pointer hover:border-2 hover:border-cyan-400 rounded-xl shadow-lg">
               <img src={img1} className="h-60 w-60" alt="" />
               <h1 className="text-2xl font-semibold text-center mt-4">Find a Doctor</h1>
