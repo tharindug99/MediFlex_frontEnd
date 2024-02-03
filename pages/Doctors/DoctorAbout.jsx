@@ -1,6 +1,7 @@
 import React from 'react';
 
 const DoctorAbout = () => {
+
   return (
     <div>
       <div>
@@ -14,9 +15,7 @@ const DoctorAbout = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eius
           assumenda corrupti at fugiat ipsum odio laudantium quisquam veritatis
           consectetur velit illo ullam animi necessitatibus vero voluptatum fuga
-          consequuntur, aspernatur perspiciatis adipisci. Necessitatibus et non
-          sapiente sit distinctio, repellat illo totam perspiciatis, inventore
-          ex assumenda odit natus cumque saepe nostrum?
+          consequuntur, aspernatur perspiciatis adipisci. Necessitatibus et no
         </p>
       </div>
 
