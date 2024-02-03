@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import doctorImg from '../../src/assets/images/doc.png'
 import star from '../../src/assets/images/star.png'
+import DoctorAbout from './DoctorAbout';
+import Feedback from './Feedback';
 
 const DoctorDetails = ({id}) => {
   
@@ -49,6 +51,11 @@ const DoctorDetails = ({id}) => {
                         className={`${tab=='feedback' && 'border-b border-solid border-primaryColor'} py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor font-semibold`}>
                   Feedback
                 </button>
+            </div>
+
+            <div className='mt-[50px]'>
+              {tab === "about"&& <DoctorAbout/>}
+              {tab === "feedback"&& <Feedback/>}
             </div>
 
           </div>
